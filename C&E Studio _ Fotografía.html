@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#contacto -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C&amp;E Studio | Fotografía</title>
+<meta name="description" content="C&amp;E Studio - Estudio fotográfico de Claudia y Elena. Capturamos momentos y creamos recuerdos.">
+
+<style>
+/* =========================================================
+   C&E STUDIO - PÁGINA WEB
+   Hecha para editar fácilmente en Notepad++.
+
+   PARA CAMBIAR:
+   1. Nombre: busca "C&E Studio"
+   2. Nombres: busca "Claudia" y "Elena"
+   3. Fotos: cambia las direcciones dentro de src="..."
+   4. Colores: cambia las variables dentro de :root
+   5. WhatsApp: busca "50212345678" y pon su número
+   ========================================================= */
+
+:root {
+  --fondo: #f7f5f2;
+  --blanco: #ffffff;
+  --negro: #1c1b1a;
+  --gris: #6d6964;
+  --dorado: #b49a6c;
+  --beige: #e8dfd2;
+  --borde: #ded8d0;
+  --fuente-titulo: Georgia, "Times New Roman", serif;
+  --fuente-texto: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  color: var(--negro);
+  background: var(--fondo);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.contenedor {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+/* ================= NAVEGACIÓN ================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(247,245,242,.96);
+  border-bottom: 1px solid var(--borde);
+}
+
+.nav {
+  max-width: 1150px;
+  margin: auto;
+  padding: 18px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-family: var(--fuente-titulo);
+  font-size: 1.55rem;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--dorado);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  font-size: .88rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu a:hover {
+  color: var(--dorado);
+}
+
+/* ================= PORTADA ================= */
+
+.hero {
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--blanco);
+}
+
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 8%;
+}
+
+.etiqueta {
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: .75rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 400;
+  line-height: .98;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: var(--dorado);
+  font-style: italic;
+}
+
+.hero p {
+  color: var(--gris);
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.botones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.boton {
+  display: inline-block;
+  padding: 13px 24px;
+  border: 1px solid var(--negro);
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .2s;
+}
+
+.boton:hover {
+  background: var(--negro);
+  color: var(--blanco);
+}
+
+.boton-dorado {
+  background: var(--negro);
+  color: var(--blanco);
+}
+
+.hero-imagen {
+  min-height: 650px;
+}
+
+/* ================= SECCIONES ================= */
+
+section {
+  padding: 100px 25px;
+}
+
+.titulo {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+
+.titulo small {
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.titulo h2 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.titulo p {
+  color: var(--gris);
+}
+
+/* ================= NOSOTRAS ================= */
+
+.nosotras {
+  background: var(--fondo);
+}
+
+.nosotras-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.foto-nosotras {
+  height: 550px;
+}
+
+.texto-nosotras h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.texto-nosotras p {
+  color: var(--gris);
+  margin-bottom: 15px;
+}
+
+.firma {
+  margin-top: 25px;
+  font-family: var(--fuente-titulo);
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+/* ================= PORTAFOLIO ================= */
+
+.portafolio {
+  background: var(--blanco);
+}
+
+.grid-fotos {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.foto {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-grande {
+  grid-row: span 2;
+  height: 814px;
+}
+
+.foto img {
+  transition: transform .5s ease;
+}
+
+.foto:hover img {
+  transform: scale(1.05);
+}
+
+.foto-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0,0,0,.75));
+  opacity: 0;
+  transition: .3s;
+}
+
+.foto:hover .foto-info {
+  opacity: 1;
+}
+
+/* ================= SERVICIOS ================= */
+
+.servicios {
+  background: var(--beige);
+}
+
+.grid-servicios {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.servicio {
+  background: var(--blanco);
+  padding: 40px 30px;
+  border: 1px solid var(--borde);
+}
+
+.numero {
+  color: var(--dorado);
+  font-family: var(--fuente-titulo);
+  font-size: 1.5rem;
+}
+
+.servicio h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 20px 0 10px;
+}
+
+.servicio p {
+  color: var(--gris);
+}
+
+/* ================= GALERÍA ================= */
+
+.galeria {
+  background: var(--fondo);
+}
+
+.galeria-grid {
+  max-width: 1100px;
+  margin: auto;
+  columns: 3 250px;
+  column-gap: 15px;
+}
+
+.galeria-item {
+  height: 330px;
+  margin-bottom: 15px;
+  break-inside: avoid;
+}
+
+.galeria-item.alta {
+  height: 500px;
+}
+
+/* ================= FRASE ================= */
+
+.frase {
+  padding: 110px 25px;
+  background: var(--negro);
+  color: var(--blanco);
+  text-align: center;
+}
+
+.frase h2 {
+  max-width: 850px;
+  margin: auto;
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.frase p {
+  color: #c9c5bf;
+  margin-top: 20px;
+}
+
+/* ================= CONTACTO ================= */
+
+.contacto {
+  background: var(--blanco);
+}
+
+.contacto-grid {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contacto h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  color: var(--gris);
+  margin-bottom: 25px;
+}
+
+.dato {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--borde);
+}
+
+.dato strong {
+  display: block;
+  font-size: .75rem;
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 14px;
+  border: 1px solid var(--borde);
+  background: var(--fondo);
+  font-family: inherit;
+}
+
+.formulario textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.formulario button {
+  cursor: pointer;
+}
+
+/* ================= PIE ================= */
+
+footer {
+  background: var(--negro);
+  color: #c9c5bf;
+  text-align: center;
+  padding: 40px 25px;
+}
+
+footer strong {
+  color: var(--blanco);
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+}
+
+footer p {
+  margin-top: 8px;
+  font-size: .85rem;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 200;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-imagen {
+    min-height: 500px;
+    order: -1;
+  }
+
+  .nosotras-grid,
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-nosotras {
+    height: 450px;
+  }
+
+  .grid-fotos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foto-grande {
+    height: 500px;
+  }
+
+  .grid-servicios {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: .75rem;
+  }
+
+  .hero-texto {
+    padding: 60px 25px;
+  }
+
+  .grid-fotos {
+    grid-template-columns: 1fr;
+  }
+
+  .foto,
+  .foto-grande {
+    height: 450px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= MENÚ ================= -->
+<header>
+  <nav class="nav">
+    <a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#inicio" class="logo">C<span>&amp;</span>E Studio</a>
+
+    <ul class="menu">
+      <li><a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#inicio">Inicio</a></li>
+      <li><a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#nosotras">Nosotras</a></li>
+      <li><a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#portafolio">Portafolio</a></li>
+      <li><a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#servicios">Servicios</a></li>
+      <li><a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#galeria">Galería</a></li>
+      <li><a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= PORTADA ================= -->
+<section class="hero" id="inicio">
+  <div class="hero-texto">
+    <span class="etiqueta">Fotografía · Creatividad · Momentos</span>
+
+    <h1>Tu historia, <span>nuestra mirada.</span></h1>
+
+    <p>
+      Bienvenidos a C&amp;E Studio, un espacio creado por Claudia y Elena.
+      Nos apasiona capturar momentos, emociones y detalles que merecen
+      convertirse en recuerdos para siempre.
+    </p>
+
+    <div class="botones">
+      <a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#portafolio" class="boton boton-dorado">Ver portafolio</a>
+      <a href="file:///C:/Users/juana/Downloads/CE_Studio_Pagina.html#contacto" class="boton">Contáctanos</a>
+    </div>
+  </div>
+
+  <!-- CAMBIA ESTA FOTO POR UNA TOMADA POR USTEDES -->
+  <div class="hero-imagen">
+    <img src="./C&amp;E Studio _ Fotografía_files/portada.jpeg" alt="Cámara fotográfica de C&amp;E Studio">
+  </div>
+</section>
+
+<!-- ================= NOSOTRAS ================= -->
+<section class="nosotras" id="nosotras">
+  <div class="titulo">
+    <small>Conócenos</small>
+    <h2>Dos miradas, una pasión</h2>
+    <p>Conoce a las personas detrás de C&amp;E Studio.</p>
+  </div>
+
+  <div class="nosotras-grid">
+    <!-- CAMBIA ESTA FOTO POR UNA FOTO DE CLAUDIA Y ELENA -->
+    <div class="foto-nosotras">
+      <img src="./C&amp;E Studio _ Fotografía_files/nosotras.jpg" alt="Claudia y Elena - C&amp;E Studio">
+    </div>
+
+    <div class="texto-nosotras">
+      <h3>Somos Claudia y Elena</h3>
+
+      <p>
+        C&amp;E Studio nació de nuestra pasión por la fotografía y de nuestro
+        deseo de guardar para siempre esos pequeños momentos que hacen
+        especial la vida.
+      </p>
+
+      <p>
+        Cada fotografía es una oportunidad para contar una historia,
+        transmitir una emoción y conservar un recuerdo.
+      </p>
+
+      <p>
+        Nuestro objetivo es crear imágenes auténticas, bonitas y llenas
+        de personalidad.
+      </p>
+
+      <div class="firma">Claudia &amp; Elena</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTAFOLIO ================= -->
+<section class="portafolio" id="portafolio">
+  <div class="titulo">
+    <small>Nuestro trabajo</small>
+    <h2>Portafolio</h2>
+    <p>
+      Cada fotografía cuenta con una historia unica.
+      Descubre los momentos que hemos capturado con pasión,creatividad y dedicación.
+    </p>
+  </div>
+
+  <div class="grid-fotos">
+
+    <div class="foto foto-grande">
+      <img src="./C&amp;E Studio _ Fotografía_files/retrato.jpeg" alt="Retrato">
+      <div class="foto-info">Retratos</div>
+    </div>
+
+    <div class="foto">
+      <img src="./C&amp;E Studio _ Fotografía_files/naturaleza.jpeg" alt="Naturaleza">
+      <div class="foto-info">Naturaleza</div>
+    </div>
+
+    <div class="foto">
+      <img src="./C&amp;E Studio _ Fotografía_files/paisaje.jpg" alt="Paisaje">
+      <div class="foto-info">Paisajes</div>
+    </div>
+
+    <div class="foto">
+      <img src="./C&amp;E Studio _ Fotografía_files/eventos.jpeg" alt="Evento">
+      <div class="foto-info">Momentos especiales</div>
+    </div>
+
+    <div class="foto">
+      <img src="./C&amp;E Studio _ Fotografía_files/sesiones.jpeg" alt="Sesión fotográfica">
+      <div class="foto-info">Sesiones</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section class="servicios" id="servicios">
+  <div class="titulo">
+    <small>Lo que hacemos</small>
+    <h2>Nuestros servicios</h2>
+    <p>Elige el tipo de sesión que deseas realizar con C&amp;E Studio.</p>
+  </div>
+
+  <div class="grid-servicios">
+
+    <div class="servicio">
+      <span class="numero">01</span>
+      <h3>Retratos</h3>
+      <p>
+        Sesiones individuales para capturar tu personalidad y crear
+        fotografías únicas.
+      </p>
+    </div>
+
+    <div class="servicio">
+      <span class="numero">02</span>
+      <h3>Eventos</h3>
+      <p>
+        Capturamos los momentos más importantes de tus celebraciones
+        y eventos especiales.
+      </p>
+    </div>
+
+    <div class="servicio">
+      <span class="numero">03</span>
+      <h3>Fotografía creativa</h3>
+      <p>
+        Sesiones originales y creativas para quienes buscan fotografías
+        diferentes y especiales.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="galeria" id="galeria">
+  <div class="titulo">
+    <small>Momentos</small>
+    <h2>Nuestra galería</h2>
+    <p>
+      
+    </p>
+  </div>
+
+  <div class="galeria-grid">
+
+    <div class="galeria-item alta">
+      <img src="./C&amp;E Studio _ Fotografía_files/galeria.jpeg" alt="Retrato">
+    </div>
+
+    <div class="galeria-item">
+      <img src="./C&amp;E Studio _ Fotografía_files/galeria1.jpeg" alt="Paisaje">
+    </div>
+
+    <div class="galeria-item alta">
+      <img src="./C&amp;E Studio _ Fotografía_files/cultura.jpeg" alt="Retrato creativo">
+    </div>
+
+    <div class="galeria-item">
+      <img src="./C&amp;E Studio _ Fotografía_files/galeria6.jpg" alt="Naturaleza">
+    </div>
+
+    <div class="galeria-item">
+      <img src="./C&amp;E Studio _ Fotografía_files/galeriia5.jpg" alt="Evento">
+    </div>
+
+    <div class="galeria-item alta">
+      <img src="./C&amp;E Studio _ Fotografía_files/galeria3.jpeg" alt="Moda y retrato">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FRASE ================= -->
+<section class="frase">
+  <h2>"No fotografiamos solamente momentos; capturamos historias que merecen ser recordadas."</h2>
+  <p>C&amp;E Studio · Claudia &amp; Elena</p>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="contacto" id="contacto">
+  <div class="titulo">
+    <small>Diseñamos tu sesión fotográfica</small>
+    <h2></h2>
+    <p>Estamos listas para escuchar tu idea y convertirla en fotografías.</p>
+  </div>
+
+  <div class="contacto-grid">
+
+    <div>
+      <h3>Contáctanos</h3>
+      <p>
+        Escríbenos para consultar disponibilidad, conocer nuestros servicios
+        o planificar una sesión fotográfica.
+      </p>
+
+      <!-- CAMBIA ESTOS DATOS -->
+      <div class="dato">
+        <strong>WhatsApp</strong>
+        +502 5880-3851 o
+		5173-7231
+      </div>
+
+      <div class="dato">
+        <strong>Instagram</strong>
+        @ce.studio
+      </div>
+
+      <div class="dato">
+        <strong>Correo</strong>
+        cestudio@gmail.com
+      </div>
+    </div>
+
+    <form class="formulario" onsubmit="enviarFormulario(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required="">
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required="">
+      <textarea id="mensaje" placeholder="Cuéntanos qué tipo de sesión deseas..." required=""></textarea>
+      <button type="submit" class="boton boton-dorado">Enviar mensaje</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= PIE ================= -->
+<footer>
+  <strong>C&amp;E Studio</strong>
+  <p>Claudia &amp; Elena · Fotografía y creatividad</p>
+  <p>© 2026 C&amp;E Studio. Todos los derechos reservados.</p>
+</footer>
+
+<!-- BOTÓN DE WHATSAPP
+     CAMBIA 50212345678 POR SU NÚMERO REAL -->
+<a class="whatsapp" href="https://wa.me/50212345678?text=Hola%20C%26E%20Studio%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20sesi%C3%B3n%20fotogr%C3%A1fica." target="_blank" aria-label="Contactar por WhatsApp">💬</a>
+
+<script>
+/* Este formulario abre WhatsApp con el mensaje escrito.
+   CAMBIA EL NÚMERO EN ESTA PARTE TAMBIÉN. */
+
+function enviarFormulario(event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const correo = document.getElementById("correo").value;
+  const mensaje = document.getElementById("mensaje").value;
+
+  const texto =
+    "Hola C&E Studio.%0A%0A" +
+    "Mi nombre es: " + encodeURIComponent(nombre) + "%0A" +
+    "Mi correo: " + encodeURIComponent(correo) + "%0A" +
+    "Mi mensaje: " + encodeURIComponent(mensaje);
+
+  window.open(
+    "https://wa.me/50212345678?text=" + texto,
+    "_blank"
+  );
+}
+</script>
+
+
+
+</body></html>
